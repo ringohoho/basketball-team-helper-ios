@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D21698B-8E08-4048-BF52-22B71CFA59B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BasketballTeamHelper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA54C609-F0EA-4496-AC09-87907E9F2D53</key>
+		<string>https://bitbucket.org/richardchien/basketball-team-helper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BasketballTeamHelper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA54C609-F0EA-4496-AC09-87907E9F2D53</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/richardchien/basketball-team-helper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA54C609-F0EA-4496-AC09-87907E9F2D53</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA54C609-F0EA-4496-AC09-87907E9F2D53</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BasketballTeamHelper</string>
+		</dict>
+	</array>
+</dict>
+</plist>

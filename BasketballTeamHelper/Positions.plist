@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>大前锋 PF</string>
+	<string>小前锋 SF</string>
+	<string>中锋 C</string>
+	<string>得分后卫 SG</string>
+	<string>控球后卫 PG</string>
+</array>
+</plist>
