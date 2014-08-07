@@ -73,4 +73,9 @@
     return nil;
 }
 
+- (IBAction)backgroundTap:(id)sender
+{
+    [[self findFirstResponder] resignFirstResponder];
+}
+
 @end

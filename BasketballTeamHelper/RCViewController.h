@@ -19,5 +19,6 @@
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;
 - (UIResponder *)findFirstResponder;
+- (IBAction)backgroundTap:(id)sender;
 
 @end

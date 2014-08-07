@@ -18,7 +18,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithTitle:@"⬇️" style:UIBarButtonItemStyleDone target:nil action:@selector(save)];
+        UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithTitle:@"隐藏" style:UIBarButtonItemStyleDone target:nil action:@selector(save)];
         [saveBtn setTintColor:DEFAULT_TINT_COLOR];
         [self setItems:[NSArray arrayWithObject:saveBtn] animated:YES];
         [self sizeToFit];

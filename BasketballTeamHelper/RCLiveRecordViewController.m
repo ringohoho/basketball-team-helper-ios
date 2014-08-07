@@ -93,6 +93,20 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.statsArray removeObjectAtIndex:indexPath.row]; // Delete the row from the data source.
+        [self.statsTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.statsTable reloadData];
+    }
+}
+
 - (IBAction)addOneRecord:(id)sender
 {
     NSDateFormatter *f = [[NSDateFormatter alloc] init];

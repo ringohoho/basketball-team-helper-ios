@@ -165,31 +165,8 @@
 				79103E3B192CE16400F49C1C /* RCHelper.h */,
 				79103E3C192CE16400F49C1C /* RCHelper.m */,
 				79103E37192CD3BA00F49C1C /* Model */,
-				7917CAC0192CD2F300C8AE9E /* RCTextFieldWithPicker.h */,
-				7917CAC1192CD2F300C8AE9E /* RCTextFieldWithPicker.m */,
-				79D2EE2E192F7E4400033862 /* RCToolbar.h */,
-				79D2EE2F192F7E4400033862 /* RCToolbar.m */,
-				7917CAC2192CD2F300C8AE9E /* RCViewController.h */,
-				7917CAC3192CD2F300C8AE9E /* RCViewController.m */,
-				79103E3E192CE96E00F49C1C /* RCHomeViewController.h */,
-				79103E3F192CE96E00F49C1C /* RCHomeViewController.m */,
-				79CE3F90192E1A10003F45BB /* RCTeamInfoViewController.h */,
-				79CE3F91192E1A10003F45BB /* RCTeamInfoViewController.m */,
-				79DDDB8519910978006058E7 /* RCAddViewController.h */,
-				79DDDB8619910978006058E7 /* RCAddViewController.m */,
-				79D2EE31192F872200033862 /* RCAddPlayerViewController.h */,
-				79D2EE32192F872200033862 /* RCAddPlayerViewController.m */,
-				794345D6193C942800B4A702 /* RCPlayersStatsViewController.h */,
-				794345D7193C942800B4A702 /* RCPlayersStatsViewController.m */,
-				79D514DD1945C8A300553091 /* RCMatchesMasterViewController.h */,
-				79D514DE1945C8A300553091 /* RCMatchesMasterViewController.m */,
-				79D514E01945CBF800553091 /* RCMatchDetailViewController.h */,
-				79D514E11945CBF800553091 /* RCMatchDetailViewController.m */,
-				79D514CE1945723900553091 /* RCAddMatchViewController.h */,
-				79D514CF1945723900553091 /* RCAddMatchViewController.m */,
-				79D514D119457DC300553091 /* RCLiveRecordViewController.h */,
-				79D514D219457DC300553091 /* RCLiveRecordViewController.m */,
-				7917CAC4192CD2F300C8AE9E /* iPhoneMain.storyboard */,
+				79E43C071993373B00554907 /* View Controller */,
+				79E43C081993374F00554907 /* View */,
 				7917CA92192CD21C00C8AE9E /* Supporting Files */,
 			);
 			path = BasketballTeamHelper;
@@ -226,6 +203,45 @@
 				7917CAAD192CD21C00C8AE9E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79E43C071993373B00554907 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7917CAC2192CD2F300C8AE9E /* RCViewController.h */,
+				7917CAC3192CD2F300C8AE9E /* RCViewController.m */,
+				79103E3E192CE96E00F49C1C /* RCHomeViewController.h */,
+				79103E3F192CE96E00F49C1C /* RCHomeViewController.m */,
+				79CE3F90192E1A10003F45BB /* RCTeamInfoViewController.h */,
+				79CE3F91192E1A10003F45BB /* RCTeamInfoViewController.m */,
+				79DDDB8519910978006058E7 /* RCAddViewController.h */,
+				79DDDB8619910978006058E7 /* RCAddViewController.m */,
+				79D2EE31192F872200033862 /* RCAddPlayerViewController.h */,
+				79D2EE32192F872200033862 /* RCAddPlayerViewController.m */,
+				794345D6193C942800B4A702 /* RCPlayersStatsViewController.h */,
+				794345D7193C942800B4A702 /* RCPlayersStatsViewController.m */,
+				79D514DD1945C8A300553091 /* RCMatchesMasterViewController.h */,
+				79D514DE1945C8A300553091 /* RCMatchesMasterViewController.m */,
+				79D514E01945CBF800553091 /* RCMatchDetailViewController.h */,
+				79D514E11945CBF800553091 /* RCMatchDetailViewController.m */,
+				79D514CE1945723900553091 /* RCAddMatchViewController.h */,
+				79D514CF1945723900553091 /* RCAddMatchViewController.m */,
+				79D514D119457DC300553091 /* RCLiveRecordViewController.h */,
+				79D514D219457DC300553091 /* RCLiveRecordViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		79E43C081993374F00554907 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7917CAC0192CD2F300C8AE9E /* RCTextFieldWithPicker.h */,
+				7917CAC1192CD2F300C8AE9E /* RCTextFieldWithPicker.m */,
+				79D2EE2E192F7E4400033862 /* RCToolbar.h */,
+				79D2EE2F192F7E4400033862 /* RCToolbar.m */,
+				7917CAC4192CD2F300C8AE9E /* iPhoneMain.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

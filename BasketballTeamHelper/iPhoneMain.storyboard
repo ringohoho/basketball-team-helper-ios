@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A299l" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fj8-Yx-HLP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A299l" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fj8-Yx-HLP">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="56"/>
         </scene>
-        <!--首页-->
+        <!--Home View Controller - 首页-->
         <scene sceneID="mGH-sA-s7K">
             <objects>
                 <viewController id="2Cy-i3-BiM" customClass="RCHomeViewController" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                         <viewControllerLayoutGuide type="top" id="fcw-4w-cLX"/>
                         <viewControllerLayoutGuide type="bottom" id="ffp-3I-A6Y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3mK-S8-Y9U">
+                    <view key="view" contentMode="scaleToFill" id="3mK-S8-Y9U" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -152,6 +152,9 @@
                             <constraint firstAttribute="trailing" secondItem="Z6k-Jm-VXl" secondAttribute="trailing" constant="20" id="vcA-kb-ZeB"/>
                             <constraint firstAttribute="trailing" secondItem="BgY-GN-ksd" secondAttribute="trailing" constant="20" id="wcf-K4-Pbm"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="2Cy-i3-BiM" eventType="touchDown" id="JLU-h1-695"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="9kF-Hg-yf0">
                         <barButtonItem key="backBarButtonItem" title="返回" id="YJU-oN-Kpc"/>
@@ -191,7 +194,7 @@
             </objects>
             <point key="canvasLocation" x="781" y="622"/>
         </scene>
-        <!--添加-->
+        <!--Add View Controller - 添加-->
         <scene sceneID="fSf-vI-gsl">
             <objects>
                 <viewController id="YAG-fo-Pl7" customClass="RCAddViewController" sceneMemberID="viewController">
@@ -199,7 +202,7 @@
                         <viewControllerLayoutGuide type="top" id="VWt-d4-tnQ"/>
                         <viewControllerLayoutGuide type="bottom" id="6Uh-iS-IG2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Bfo-x2-z2h">
+                    <view key="view" contentMode="scaleToFill" id="Bfo-x2-z2h" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -239,6 +242,9 @@
                             <constraint firstAttribute="centerY" secondItem="m2X-70-41k" secondAttribute="centerY" constant="74" id="J5Z-fd-NJV"/>
                             <constraint firstAttribute="centerX" secondItem="jvV-4R-q6f" secondAttribute="centerX" id="v5k-EY-JnK"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="YAG-fo-Pl7" eventType="touchDown" id="Rzv-kL-ucx"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="添加" id="um7-n1-3uP">
                         <barButtonItem key="backBarButtonItem" title="返回" id="qdM-mM-dAW"/>
@@ -278,7 +284,7 @@
             </objects>
             <point key="canvasLocation" x="1158" y="-507"/>
         </scene>
-        <!--实时记录-->
+        <!--Live Record View Controller - 实时记录-->
         <scene sceneID="pwH-RY-fnO">
             <objects>
                 <viewController id="Ztm-g2-bAE" customClass="RCLiveRecordViewController" sceneMemberID="viewController">
@@ -286,7 +292,7 @@
                         <viewControllerLayoutGuide type="top" id="Ent-UY-ada"/>
                         <viewControllerLayoutGuide type="bottom" id="qOl-Az-zBQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Zs3-3j-h0B">
+                    <view key="view" contentMode="scaleToFill" id="Zs3-3j-h0B" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -346,6 +352,9 @@
                             <constraint firstItem="lXV-OM-bcC" firstAttribute="top" secondItem="a7o-dx-g5q" secondAttribute="bottom" constant="44" id="T51-gG-kn9"/>
                             <constraint firstAttribute="trailing" secondItem="lXV-OM-bcC" secondAttribute="trailing" id="nPq-48-XWe"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="Ztm-g2-bAE" eventType="touchDown" id="ejk-TG-Zhc"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="实时记录" id="3m0-V1-0gw">
                         <barButtonItem key="leftBarButtonItem" title="完成" style="done" id="My2-mO-HiD">
@@ -368,7 +377,7 @@
             </objects>
             <point key="canvasLocation" x="1534" y="-507"/>
         </scene>
-        <!--添加场次-->
+        <!--Add Match View Controller - 添加场次-->
         <scene sceneID="O5Z-RU-HPj">
             <objects>
                 <viewController id="Rhk-1T-kqE" customClass="RCAddMatchViewController" sceneMemberID="viewController">
@@ -376,7 +385,7 @@
                         <viewControllerLayoutGuide type="top" id="Peg-2J-M7l"/>
                         <viewControllerLayoutGuide type="bottom" id="871-Jk-I5j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Zph-aj-6Zd">
+                    <view key="view" contentMode="scaleToFill" id="Zph-aj-6Zd" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -475,6 +484,9 @@
                             <constraint firstItem="HZ5-FV-gbv" firstAttribute="leading" secondItem="Zph-aj-6Zd" secondAttribute="leading" constant="20" id="yFz-Lu-vPF"/>
                             <constraint firstItem="FYe-8g-Vxb" firstAttribute="top" secondItem="Peg-2J-M7l" secondAttribute="bottom" constant="20" id="zNQ-rw-m6E"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="Rhk-1T-kqE" eventType="touchDown" id="BSC-PL-W7d"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="添加场次" id="G7I-9K-qqa">
                         <barButtonItem key="backBarButtonItem" title="返回" id="xek-Du-naK"/>
@@ -499,7 +511,7 @@
             </objects>
             <point key="canvasLocation" x="1534" y="56"/>
         </scene>
-        <!--添加球员-->
+        <!--Add Player View Controller - 添加球员-->
         <scene sceneID="JQx-65-9QW">
             <objects>
                 <viewController id="0CJ-Th-jUZ" customClass="RCAddPlayerViewController" sceneMemberID="viewController">
@@ -507,7 +519,7 @@
                         <viewControllerLayoutGuide type="top" id="Aeh-qK-ghq"/>
                         <viewControllerLayoutGuide type="bottom" id="DQa-YB-tdw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xpE-Ki-wDp">
+                    <view key="view" contentMode="scaleToFill" id="xpE-Ki-wDp" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -584,6 +596,9 @@
                             <constraint firstItem="mIu-Eg-2hL" firstAttribute="top" secondItem="Rzq-U9-C7C" secondAttribute="bottom" constant="17" id="ufx-Jl-uZK"/>
                             <constraint firstItem="593-18-GzW" firstAttribute="leading" secondItem="xpE-Ki-wDp" secondAttribute="leading" constant="20" id="xNb-pT-6Fq"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="0CJ-Th-jUZ" eventType="touchDown" id="hFk-tN-7oh"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="添加球员" id="8cL-hd-nKi">
                         <barButtonItem key="backBarButtonItem" title="返回" id="VLO-UF-GBb"/>
@@ -608,7 +623,7 @@
             </objects>
             <point key="canvasLocation" x="1158" y="622"/>
         </scene>
-        <!--球员数据-->
+        <!--Players Stats View Controller - 球员数据-->
         <scene sceneID="y7N-x9-1sm">
             <objects>
                 <viewController id="qsh-CJ-e7A" customClass="RCPlayersStatsViewController" sceneMemberID="viewController">
@@ -616,7 +631,7 @@
                         <viewControllerLayoutGuide type="top" id="k4h-Iw-3Ma"/>
                         <viewControllerLayoutGuide type="bottom" id="Wvb-ta-cTH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PlK-V3-WOn">
+                    <view key="view" contentMode="scaleToFill" id="PlK-V3-WOn" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -733,6 +748,9 @@
                             <constraint firstItem="mmL-5f-mvo" firstAttribute="top" secondItem="Otc-B7-gXo" secondAttribute="bottom" constant="8" id="jow-i4-19c"/>
                             <constraint firstItem="wQo-TI-ifA" firstAttribute="leading" secondItem="L0g-Ys-14K" secondAttribute="trailing" constant="8" id="yrh-do-uih"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="qsh-CJ-e7A" eventType="touchDown" id="WRj-v0-EWs"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="球员数据" id="w49-cU-uXo">
                         <barButtonItem key="backBarButtonItem" title="返回" id="exF-TQ-prA"/>
@@ -753,7 +771,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="622"/>
         </scene>
-        <!--场次数据-->
+        <!--Matches Master View Controller - 场次数据-->
         <scene sceneID="vWR-Di-CvO">
             <objects>
                 <viewController id="3FP-wk-kPR" customClass="RCMatchesMasterViewController" sceneMemberID="viewController">
@@ -761,7 +779,7 @@
                         <viewControllerLayoutGuide type="top" id="f8e-XT-bXl"/>
                         <viewControllerLayoutGuide type="bottom" id="kXm-5H-UmU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UOD-GT-Ika">
+                    <view key="view" contentMode="scaleToFill" id="UOD-GT-Ika" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -810,6 +828,9 @@
                             <constraint firstItem="nhB-Cm-Lkj" firstAttribute="top" secondItem="UOD-GT-Ika" secondAttribute="top" id="ujM-6D-67a"/>
                             <constraint firstItem="kXm-5H-UmU" firstAttribute="top" secondItem="nhB-Cm-Lkj" secondAttribute="bottom" id="wW5-8e-AF9"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="3FP-wk-kPR" eventType="touchDown" id="Dqr-wF-Psa"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="场次数据" id="vnU-Kj-iOa">
                         <barButtonItem key="backBarButtonItem" title="返回" id="66G-kD-dhO"/>
@@ -822,7 +843,7 @@
             </objects>
             <point key="canvasLocation" x="396" y="622"/>
         </scene>
-        <!--详细记录-->
+        <!--Match Detail View Controller - 详细记录-->
         <scene sceneID="ddt-I5-Z1j">
             <objects>
                 <viewController id="PdP-Hh-0oL" customClass="RCMatchDetailViewController" sceneMemberID="viewController">
@@ -830,7 +851,7 @@
                         <viewControllerLayoutGuide type="top" id="KJG-eJ-9QI"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2V-wt-eba"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dT0-F2-rZd">
+                    <view key="view" contentMode="scaleToFill" id="dT0-F2-rZd" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -918,6 +939,9 @@
                             <constraint firstAttribute="trailing" secondItem="8vC-Ol-9kq" secondAttribute="trailing" constant="20" id="s18-lf-1cS"/>
                             <constraint firstItem="uQP-cT-6OV" firstAttribute="top" secondItem="8vC-Ol-9kq" secondAttribute="bottom" constant="8" id="unQ-lG-cSi"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="PdP-Hh-0oL" eventType="touchDown" id="0Pq-kd-B4u"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="详细记录" id="rIY-EB-nVp">
                         <barButtonItem key="backBarButtonItem" title="返回" id="XGh-9Q-d9D"/>
@@ -946,7 +970,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="-507"/>
         </scene>
-        <!--球队信息-->
+        <!--Team Info View Controller - 球队信息-->
         <scene sceneID="GnH-5i-8Fs">
             <objects>
                 <viewController id="eGU-nY-gBi" customClass="RCTeamInfoViewController" sceneMemberID="viewController">
@@ -954,7 +978,7 @@
                         <viewControllerLayoutGuide type="top" id="72a-iH-bxR"/>
                         <viewControllerLayoutGuide type="bottom" id="YUJ-O0-Bzj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Mh5-K4-Y9F">
+                    <view key="view" contentMode="scaleToFill" id="Mh5-K4-Y9F" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -1006,6 +1030,9 @@
                             <constraint firstItem="9tN-OC-QgQ" firstAttribute="leading" secondItem="Mh5-K4-Y9F" secondAttribute="leading" constant="20" id="pA8-vn-9uV"/>
                             <constraint firstAttribute="trailing" secondItem="9tN-OC-QgQ" secondAttribute="trailing" constant="20" id="xe1-2H-zwU"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="eGU-nY-gBi" eventType="touchDown" id="6Zb-mW-ttJ"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="球队信息" id="2sd-F1-NKV">
                         <barButtonItem key="leftBarButtonItem" title="完成" style="done" id="kan-3n-rax">
@@ -1029,13 +1056,10 @@
             <point key="canvasLocation" x="396" y="-507"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination">
-            <size key="portraitSize" width="320" height="480"/>
-            <size key="landscapeSize" width="480" height="320"/>
-        </simulatedScreenMetrics>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
