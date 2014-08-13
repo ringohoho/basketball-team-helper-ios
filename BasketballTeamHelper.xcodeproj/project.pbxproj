@@ -13,13 +13,11 @@
 		7917CA8C192CD21C00C8AE9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CA8B192CD21C00C8AE9E /* Foundation.framework */; };
 		7917CA8E192CD21C00C8AE9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CA8D192CD21C00C8AE9E /* CoreGraphics.framework */; };
 		7917CA90192CD21C00C8AE9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CA8F192CD21C00C8AE9E /* UIKit.framework */; };
-		7917CA96192CD21C00C8AE9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7917CA94192CD21C00C8AE9E /* InfoPlist.strings */; };
 		7917CA98192CD21C00C8AE9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917CA97192CD21C00C8AE9E /* main.m */; };
 		7917CA9C192CD21C00C8AE9E /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917CA9B192CD21C00C8AE9E /* RCAppDelegate.m */; };
 		7917CAA5192CD21C00C8AE9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CAA4192CD21C00C8AE9E /* XCTest.framework */; };
 		7917CAA6192CD21C00C8AE9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CA8B192CD21C00C8AE9E /* Foundation.framework */; };
 		7917CAA7192CD21C00C8AE9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917CA8F192CD21C00C8AE9E /* UIKit.framework */; };
-		7917CAAF192CD21C00C8AE9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7917CAAD192CD21C00C8AE9E /* InfoPlist.strings */; };
 		7917CAB1192CD21C00C8AE9E /* BasketballTeamHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917CAB0192CD21C00C8AE9E /* BasketballTeamHelperTests.m */; };
 		7917CABB192CD28000C8AE9E /* Positions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7917CABA192CD28000C8AE9E /* Positions.plist */; };
 		7917CABF192CD2C600C8AE9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917CABE192CD2C600C8AE9E /* Images.xcassets */; };
@@ -59,7 +57,6 @@
 		7917CA8D192CD21C00C8AE9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7917CA8F192CD21C00C8AE9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7917CA93192CD21C00C8AE9E /* BasketballTeamHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasketballTeamHelper-Info.plist"; sourceTree = "<group>"; };
-		7917CA95192CD21C00C8AE9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7917CA97192CD21C00C8AE9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7917CA99192CD21C00C8AE9E /* BasketballTeamHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasketballTeamHelper-Prefix.pch"; sourceTree = "<group>"; };
 		7917CA9A192CD21C00C8AE9E /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +64,6 @@
 		7917CAA3192CD21C00C8AE9E /* BasketballTeamHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasketballTeamHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7917CAA4192CD21C00C8AE9E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7917CAAC192CD21C00C8AE9E /* BasketballTeamHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasketballTeamHelperTests-Info.plist"; sourceTree = "<group>"; };
-		7917CAAE192CD21C00C8AE9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7917CAB0192CD21C00C8AE9E /* BasketballTeamHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasketballTeamHelperTests.m; sourceTree = "<group>"; };
 		7917CABA192CD28000C8AE9E /* Positions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Positions.plist; sourceTree = "<group>"; };
 		7917CABE192CD2C600C8AE9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -180,7 +176,6 @@
 				7917CABA192CD28000C8AE9E /* Positions.plist */,
 				7917CABE192CD2C600C8AE9E /* Images.xcassets */,
 				7917CA93192CD21C00C8AE9E /* BasketballTeamHelper-Info.plist */,
-				7917CA94192CD21C00C8AE9E /* InfoPlist.strings */,
 				7917CA97192CD21C00C8AE9E /* main.m */,
 				7917CA99192CD21C00C8AE9E /* BasketballTeamHelper-Prefix.pch */,
 			);
@@ -200,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				7917CAAC192CD21C00C8AE9E /* BasketballTeamHelperTests-Info.plist */,
-				7917CAAD192CD21C00C8AE9E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -324,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7917CAC7192CD2F300C8AE9E /* iPhoneMain.storyboard in Resources */,
-				7917CA96192CD21C00C8AE9E /* InfoPlist.strings in Resources */,
 				7917CABF192CD2C600C8AE9E /* Images.xcassets in Resources */,
 				7917CABB192CD28000C8AE9E /* Positions.plist in Resources */,
 			);
@@ -334,7 +327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7917CAAF192CD21C00C8AE9E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,25 +373,6 @@
 			targetProxy = 7917CAA8192CD21C00C8AE9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7917CA94192CD21C00C8AE9E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7917CA95192CD21C00C8AE9E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7917CAAD192CD21C00C8AE9E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7917CAAE192CD21C00C8AE9E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7917CAB2192CD21C00C8AE9E /* Debug */ = {

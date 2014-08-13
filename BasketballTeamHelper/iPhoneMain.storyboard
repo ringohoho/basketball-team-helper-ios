@@ -332,7 +332,7 @@
                                     <outlet property="dataSource" destination="Ztm-g2-bAE" id="0OE-Lv-qc0"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyd-k1-anC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyd-k1-anC">
                                 <rect key="frame" x="101" y="212" width="118" height="30"/>
                                 <state key="normal" title="添加一条记录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -344,12 +344,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Uyd-k1-anC" firstAttribute="leading" secondItem="Zs3-3j-h0B" secondAttribute="leading" constant="101" id="3P1-S9-Qcc"/>
                             <constraint firstItem="lXV-OM-bcC" firstAttribute="leading" secondItem="Zs3-3j-h0B" secondAttribute="leading" id="3sM-5S-nW8"/>
                             <constraint firstAttribute="trailing" secondItem="a7o-dx-g5q" secondAttribute="trailing" id="5zg-bW-vWY"/>
+                            <constraint firstItem="lXV-OM-bcC" firstAttribute="top" secondItem="Uyd-k1-anC" secondAttribute="bottom" constant="8" id="All-uS-YMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Uyd-k1-anC" secondAttribute="trailing" constant="101" id="FPl-uO-ziz"/>
                             <constraint firstItem="a7o-dx-g5q" firstAttribute="leading" secondItem="Zs3-3j-h0B" secondAttribute="leading" id="Hvx-xL-feQ"/>
                             <constraint firstItem="a7o-dx-g5q" firstAttribute="top" secondItem="Zs3-3j-h0B" secondAttribute="top" constant="44" id="IVH-nk-pAt"/>
                             <constraint firstItem="qOl-Az-zBQ" firstAttribute="top" secondItem="lXV-OM-bcC" secondAttribute="bottom" id="QDH-Ac-vXI"/>
-                            <constraint firstItem="lXV-OM-bcC" firstAttribute="top" secondItem="a7o-dx-g5q" secondAttribute="bottom" constant="44" id="T51-gG-kn9"/>
+                            <constraint firstItem="Uyd-k1-anC" firstAttribute="top" secondItem="a7o-dx-g5q" secondAttribute="bottom" constant="6" id="ZDn-3F-J7B"/>
                             <constraint firstAttribute="trailing" secondItem="lXV-OM-bcC" secondAttribute="trailing" id="nPq-48-XWe"/>
                         </constraints>
                         <connections>
