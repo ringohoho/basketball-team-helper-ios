@@ -8,10 +8,11 @@
 
 #import "RCViewController.h"
 
-@class RCAddMatchViewController;
+@class RCAddMatchViewController, BFPaperButton;
 
 @interface RCLiveRecordViewController : RCViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet BFPaperButton *addRecordBtn;
 @property (strong, nonatomic) NSMutableArray *statsArray;
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UITableView *statsTable;

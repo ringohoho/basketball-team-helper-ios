@@ -7,6 +7,7 @@
 //
 
 #import "RCTeamInfoViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RCTeamInfoViewController ()
 
@@ -29,6 +30,9 @@
     // Do any additional setup after loading the view.
     self.nameText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
     self.commentText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
+    self.commentText.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.commentText.layer.borderWidth = 0.3;
+    self.commentText.layer.cornerRadius = 5.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -41,6 +41,9 @@
     
     self.nameText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
     self.commentText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
+    self.commentText.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.commentText.layer.borderWidth = 0.3;
+    self.commentText.layer.cornerRadius = 5.0;
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,7 +10,7 @@
 
 @class RCTextFieldWithPicker;
 
-@interface RCPlayersStatsViewController : RCViewController <UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate>
+@interface RCPlayersStatsViewController : RCViewController <UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet RCTextFieldWithPicker *playerText;
 @property (weak, nonatomic) IBOutlet UILabel *positionLabel;

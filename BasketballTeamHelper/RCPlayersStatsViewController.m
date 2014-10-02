@@ -41,6 +41,9 @@
     self.playerText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
     self.commentText.text = [self.players count] == 0 ? @"" : self.players[0][kCommentKey];
     self.commentText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
+    self.commentText.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.commentText.layer.borderWidth = 0.3;
+    self.commentText.layer.cornerRadius = 5.0;
     self.positionLabel.text = [self.players count] == 0 ? @"" : self.players[0][kPositionKey];
 }
 
@@ -58,11 +61,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)deletePlayer:(id)sender
+- (void)deletePlayer
 {
-    if ([self.players count] == 0)
-        return;
-    
     NSString *playerName = self.playerText.text;
     RCTeam *team = [[RCTeam alloc] init];
     int playerIndex = [team indexOfPlayer:playerName];
@@ -90,6 +90,19 @@
                                               otherButtonTitles:nil, nil];
         [alert show];
     }
+}
+
+- (IBAction)deletePlayer:(id)sender
+{
+    if ([self.players count] == 0)
+        return;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"删除当前球员"
+                                                    message:@"你确定要继续？这将会删除你当前选中的球员！删除后，该球员为球队创造的数据将保留在球队总数据中。"
+                                                   delegate:self
+                                          cancelButtonTitle:@"取消"
+                                          otherButtonTitles:@"删除", nil];
+    [alert show];
 }
 
 - (void)textViewDidChange:(UITextView *)textView
@@ -224,6 +237,14 @@
     }
     
     return cell;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != alertView.cancelButtonIndex)
+    {
+        [self deletePlayer];
+    }
 }
 
 /*

@@ -8,6 +8,7 @@
 
 #import "RCHomeViewController.h"
 #import "RCHelper.h"
+#import "BFPaperButton.h"
 
 @interface RCHomeViewController ()
 
@@ -30,6 +31,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.playersStatsBtn.backgroundColor = [UIColor whiteColor];
+    self.matchesStatsBtn.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -48,7 +51,7 @@
     [self.statsTable reloadData];
 }
 
-- (void)clearAllData
+/*- (void)clearAllData
 {
     NSError *err;
     [[NSFileManager defaultManager] removeItemAtPath:[RCHelper dataFilePath] error:&err];
@@ -81,7 +84,7 @@
                                           cancelButtonTitle:@"取消"
                                           otherButtonTitles:@"清空数据", nil];
     [alert show];
-}
+}*/
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -159,13 +162,13 @@
     return cell;
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+/*- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 1)
+    if (buttonIndex != alertView.cancelButtonIndex)
     {
         [self clearAllData];
     }
-}
+}*/
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {

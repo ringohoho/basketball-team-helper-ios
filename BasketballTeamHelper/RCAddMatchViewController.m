@@ -8,6 +8,7 @@
 
 #import "RCAddMatchViewController.h"
 #import "RCLiveRecordViewController.h"
+#import "BFPaperButton.h"
 
 @interface RCAddMatchViewController ()
 
@@ -36,8 +37,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.startRecordBtn.backgroundColor = [UIColor whiteColor];
     self.titleText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
     self.commentText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
+    self.commentText.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.commentText.layer.borderWidth = 0.3;
+    self.commentText.layer.cornerRadius = 5.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -73,13 +78,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *StatsCellID = @"Stats Cell";
+    static NSString *StatsCellID = @"Record Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:StatsCellID];
     int row = (int)indexPath.row;
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@%@",
-                                                    self.statsArray[row][kTimeKey],
-                                                    self.statsArray[row][kNameKey], self.statsArray[row][kActionKey]];
+    
+    UILabel *titleLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *subtitleLabel = (UILabel *)[cell viewWithTag:2];
+    
+    subtitleLabel.text = [NSString stringWithFormat:@"%@", self.statsArray[row][kTimeKey]];
+    titleLabel.text = [NSString stringWithFormat:@"%@ %@", self.statsArray[row][kNameKey], self.statsArray[row][kActionKey]];
     
     return cell;
 }

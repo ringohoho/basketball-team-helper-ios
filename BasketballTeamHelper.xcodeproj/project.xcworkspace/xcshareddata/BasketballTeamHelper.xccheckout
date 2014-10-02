@@ -10,29 +10,29 @@
 	<string>BasketballTeamHelper</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1D816A1F-FEE3-44F1-86FF-917BA6164069</key>
-		<string>ssh://github.com/richardchien/basketball-team-helper.git</string>
+		<key>266CBC2ACA171DAEBF5D7ED60710FD62D855BE68</key>
+		<string>github.com:richardchien/basketball-team-helper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BasketballTeamHelper.xcodeproj/project.xcworkspace</string>
+	<string>BasketballTeamHelper.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1D816A1F-FEE3-44F1-86FF-917BA6164069</key>
+		<key>266CBC2ACA171DAEBF5D7ED60710FD62D855BE68</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/richardchien/basketball-team-helper.git</string>
+	<string>github.com:richardchien/basketball-team-helper.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1D816A1F-FEE3-44F1-86FF-917BA6164069</string>
+	<string>266CBC2ACA171DAEBF5D7ED60710FD62D855BE68</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1D816A1F-FEE3-44F1-86FF-917BA6164069</string>
+			<string>266CBC2ACA171DAEBF5D7ED60710FD62D855BE68</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BasketballTeamHelper</string>
 		</dict>

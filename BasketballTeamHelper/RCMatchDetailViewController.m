@@ -35,6 +35,9 @@
     self.dateLabel.text = self.match[kDateKey];
     self.commentText.text = self.match[kCommentKey];
     self.commentText.inputAccessoryView = (UIView *)self.inputAccessoryBar;
+    self.commentText.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.commentText.layer.borderWidth = 0.3;
+    self.commentText.layer.cornerRadius = 5.0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,8 +62,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RecordCellID];
     
+    UILabel *titleLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *subtitleLabel = (UILabel *)[cell viewWithTag:2];
+    
     NSDictionary *aRecord = self.matchStats[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@%@", aRecord[kTimeKey], aRecord[kNameKey], aRecord[kActionKey]];
+    subtitleLabel.text = [NSString stringWithFormat:@"%@", aRecord[kTimeKey]];
+    titleLabel.text = [NSString stringWithFormat:@"%@ %@", aRecord[kNameKey], aRecord[kActionKey]];
     
     return cell;
 }

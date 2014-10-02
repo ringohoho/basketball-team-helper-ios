@@ -8,6 +8,11 @@
 
 #import "RCViewController.h"
 
+@class BFPaperButton;
+
 @interface RCAddViewController : RCViewController
+
+@property (weak, nonatomic) IBOutlet BFPaperButton *addPlayerBtn;
+@property (weak, nonatomic) IBOutlet BFPaperButton *addMatchBtn;
 
 @end

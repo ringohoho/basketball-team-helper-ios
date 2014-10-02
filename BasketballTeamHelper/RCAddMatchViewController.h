@@ -8,8 +8,11 @@
 
 #import "RCViewController.h"
 
+@class BFPaperButton;
+
 @interface RCAddMatchViewController : RCViewController <UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet BFPaperButton *startRecordBtn;
 @property (weak, nonatomic) IBOutlet UITextField *titleText;
 @property (weak, nonatomic) IBOutlet UITextView *commentText;
 @property (weak, nonatomic) IBOutlet UITableView *statsTable;

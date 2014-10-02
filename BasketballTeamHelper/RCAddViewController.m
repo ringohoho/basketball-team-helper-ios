@@ -7,6 +7,8 @@
 //
 
 #import "RCAddViewController.h"
+#import "RCHelper.h"
+#import "BFPaperButton.h"
 
 @interface RCAddViewController ()
 
@@ -27,6 +29,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.addPlayerBtn.backgroundColor = DEFAULT_LIGHT_BLUE_COLOR;
+    self.addPlayerBtn.cornerRadius = self.addPlayerBtn.frame.size.width / 2;
+    self.addPlayerBtn.rippleFromTapLocation = NO;
+    self.addPlayerBtn.rippleBeyondBounds = YES;
+    self.addPlayerBtn.tapCircleDiameter = MAX(self.addPlayerBtn.frame.size.width, self.addPlayerBtn.frame.size.height) * 1.5;
+    self.addMatchBtn.backgroundColor = DEFAULT_LIGHT_GREEN_COLOR;
+    self.addMatchBtn.cornerRadius = self.addMatchBtn.frame.size.width / 2;
+    self.addMatchBtn.rippleFromTapLocation = NO;
+    self.addMatchBtn.rippleBeyondBounds = YES;
+    self.addMatchBtn.tapCircleDiameter = MAX(self.addMatchBtn.frame.size.width, self.addMatchBtn.frame.size.height) * 1.5;
 }
 
 - (void)didReceiveMemoryWarning

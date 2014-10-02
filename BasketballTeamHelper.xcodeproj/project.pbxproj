@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790594CA19DD1A480099958F /* RCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790594C919DD1A480099958F /* RCTableViewController.m */; };
+		790594CD19DD1AA40099958F /* RCSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790594CC19DD1AA40099958F /* RCSettingsTableViewController.m */; };
+		790B0C4019DBDDD100932102 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B0C3F19DBDDD100932102 /* BFPaperButton.m */; };
+		790B0C4419DBE02F00932102 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B0C4319DBE02F00932102 /* UIColor+BFPaperColors.m */; };
 		79103E3A192CD3D000F49C1C /* RCTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 79103E39192CD3D000F49C1C /* RCTeam.m */; };
 		79103E3D192CE16400F49C1C /* RCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79103E3C192CE16400F49C1C /* RCHelper.m */; };
 		79103E40192CE96E00F49C1C /* RCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79103E3F192CE96E00F49C1C /* RCHomeViewController.m */; };
@@ -25,6 +29,9 @@
 		7917CAC6192CD2F300C8AE9E /* RCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917CAC3192CD2F300C8AE9E /* RCViewController.m */; };
 		7917CAC7192CD2F300C8AE9E /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917CAC4192CD2F300C8AE9E /* iPhoneMain.storyboard */; };
 		794345D8193C942800B4A702 /* RCPlayersStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794345D7193C942800B4A702 /* RCPlayersStatsViewController.m */; };
+		7959135E19DD1EB800C28611 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7959135D19DD1EB800C28611 /* MessageUI.framework */; };
+		795BA89419DD8E6E004EA605 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795BA89319DD8E6E004EA605 /* Launch Screen.xib */; };
+		7973FE7B19DC4BAA00641C60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7973FE7A19DC4BAA00641C60 /* QuartzCore.framework */; };
 		79CE3F92192E1A10003F45BB /* RCTeamInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CE3F91192E1A10003F45BB /* RCTeamInfoViewController.m */; };
 		79D2EE30192F7E4400033862 /* RCToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2EE2F192F7E4400033862 /* RCToolbar.m */; };
 		79D2EE33192F872200033862 /* RCAddPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2EE32192F872200033862 /* RCAddPlayerViewController.m */; };
@@ -46,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790594C819DD1A480099958F /* RCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTableViewController.h; sourceTree = "<group>"; };
+		790594C919DD1A480099958F /* RCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTableViewController.m; sourceTree = "<group>"; };
+		790594CB19DD1AA40099958F /* RCSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSettingsTableViewController.h; sourceTree = "<group>"; };
+		790594CC19DD1AA40099958F /* RCSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSettingsTableViewController.m; sourceTree = "<group>"; };
+		790B0C3E19DBDDD100932102 /* BFPaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperButton.h; sourceTree = "<group>"; };
+		790B0C3F19DBDDD100932102 /* BFPaperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperButton.m; sourceTree = "<group>"; };
+		790B0C4219DBE02F00932102 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		790B0C4319DBE02F00932102 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
 		79103E38192CD3D000F49C1C /* RCTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTeam.h; sourceTree = "<group>"; };
 		79103E39192CD3D000F49C1C /* RCTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTeam.m; sourceTree = "<group>"; };
 		79103E3B192CE16400F49C1C /* RCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHelper.h; sourceTree = "<group>"; };
@@ -74,6 +89,9 @@
 		7917CAC4192CD2F300C8AE9E /* iPhoneMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneMain.storyboard; sourceTree = "<group>"; };
 		794345D6193C942800B4A702 /* RCPlayersStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCPlayersStatsViewController.h; sourceTree = "<group>"; };
 		794345D7193C942800B4A702 /* RCPlayersStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCPlayersStatsViewController.m; sourceTree = "<group>"; };
+		7959135D19DD1EB800C28611 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		795BA89319DD8E6E004EA605 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		7973FE7A19DC4BAA00641C60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79CE3F90192E1A10003F45BB /* RCTeamInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTeamInfoViewController.h; sourceTree = "<group>"; };
 		79CE3F91192E1A10003F45BB /* RCTeamInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTeamInfoViewController.m; sourceTree = "<group>"; };
 		79D2EE2E192F7E4400033862 /* RCToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCToolbar.h; sourceTree = "<group>"; };
@@ -97,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7959135E19DD1EB800C28611 /* MessageUI.framework in Frameworks */,
+				7973FE7B19DC4BAA00641C60 /* QuartzCore.framework in Frameworks */,
 				7917CA8E192CD21C00C8AE9E /* CoreGraphics.framework in Frameworks */,
 				7917CA90192CD21C00C8AE9E /* UIKit.framework in Frameworks */,
 				7917CA8C192CD21C00C8AE9E /* Foundation.framework in Frameworks */,
@@ -116,6 +136,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790B0C4119DBDDDC00932102 /* BFPaperButton */ = {
+			isa = PBXGroup;
+			children = (
+				790B0C4219DBE02F00932102 /* UIColor+BFPaperColors.h */,
+				790B0C4319DBE02F00932102 /* UIColor+BFPaperColors.m */,
+				790B0C3E19DBDDD100932102 /* BFPaperButton.h */,
+				790B0C3F19DBDDD100932102 /* BFPaperButton.m */,
+			);
+			name = BFPaperButton;
+			sourceTree = "<group>";
+		};
 		79103E37192CD3BA00F49C1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +178,8 @@
 		7917CA8A192CD21C00C8AE9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7959135D19DD1EB800C28611 /* MessageUI.framework */,
+				7973FE7A19DC4BAA00641C60 /* QuartzCore.framework */,
 				7917CA8B192CD21C00C8AE9E /* Foundation.framework */,
 				7917CA8D192CD21C00C8AE9E /* CoreGraphics.framework */,
 				7917CA8F192CD21C00C8AE9E /* UIKit.framework */,
@@ -158,6 +191,7 @@
 		7917CA91192CD21C00C8AE9E /* BasketballTeamHelper */ = {
 			isa = PBXGroup;
 			children = (
+				790B0C4119DBDDDC00932102 /* BFPaperButton */,
 				79103E3B192CE16400F49C1C /* RCHelper.h */,
 				79103E3C192CE16400F49C1C /* RCHelper.m */,
 				79103E37192CD3BA00F49C1C /* Model */,
@@ -204,8 +238,12 @@
 			children = (
 				7917CAC2192CD2F300C8AE9E /* RCViewController.h */,
 				7917CAC3192CD2F300C8AE9E /* RCViewController.m */,
+				790594C819DD1A480099958F /* RCTableViewController.h */,
+				790594C919DD1A480099958F /* RCTableViewController.m */,
 				79103E3E192CE96E00F49C1C /* RCHomeViewController.h */,
 				79103E3F192CE96E00F49C1C /* RCHomeViewController.m */,
+				790594CB19DD1AA40099958F /* RCSettingsTableViewController.h */,
+				790594CC19DD1AA40099958F /* RCSettingsTableViewController.m */,
 				79CE3F90192E1A10003F45BB /* RCTeamInfoViewController.h */,
 				79CE3F91192E1A10003F45BB /* RCTeamInfoViewController.m */,
 				79DDDB8519910978006058E7 /* RCAddViewController.h */,
@@ -234,6 +272,7 @@
 				79D2EE2E192F7E4400033862 /* RCToolbar.h */,
 				79D2EE2F192F7E4400033862 /* RCToolbar.m */,
 				7917CAC4192CD2F300C8AE9E /* iPhoneMain.storyboard */,
+				795BA89319DD8E6E004EA605 /* Launch Screen.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -318,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7917CAC7192CD2F300C8AE9E /* iPhoneMain.storyboard in Resources */,
+				795BA89419DD8E6E004EA605 /* Launch Screen.xib in Resources */,
 				7917CABF192CD2C600C8AE9E /* Images.xcassets in Resources */,
 				7917CABB192CD28000C8AE9E /* Positions.plist in Resources */,
 			);
@@ -337,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790B0C4019DBDDD100932102 /* BFPaperButton.m in Sources */,
 				79D514D319457DC300553091 /* RCLiveRecordViewController.m in Sources */,
 				79103E3A192CD3D000F49C1C /* RCTeam.m in Sources */,
 				79D2EE30192F7E4400033862 /* RCToolbar.m in Sources */,
@@ -346,13 +387,16 @@
 				79D2EE33192F872200033862 /* RCAddPlayerViewController.m in Sources */,
 				7917CAC6192CD2F300C8AE9E /* RCViewController.m in Sources */,
 				79CE3F92192E1A10003F45BB /* RCTeamInfoViewController.m in Sources */,
+				790594CA19DD1A480099958F /* RCTableViewController.m in Sources */,
 				79D514E21945CBF800553091 /* RCMatchDetailViewController.m in Sources */,
 				7917CA9C192CD21C00C8AE9E /* RCAppDelegate.m in Sources */,
+				790B0C4419DBE02F00932102 /* UIColor+BFPaperColors.m in Sources */,
 				794345D8193C942800B4A702 /* RCPlayersStatsViewController.m in Sources */,
 				79103E40192CE96E00F49C1C /* RCHomeViewController.m in Sources */,
 				79DDDB8719910978006058E7 /* RCAddViewController.m in Sources */,
 				7917CAC5192CD2F300C8AE9E /* RCTextFieldWithPicker.m in Sources */,
 				79D514D01945723900553091 /* RCAddMatchViewController.m in Sources */,
+				790594CD19DD1AA40099958F /* RCSettingsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Li Jun (S57N8KGTWM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasketballTeamHelper/BasketballTeamHelper-Prefix.pch";
@@ -472,8 +516,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Li Jun (JA4F747PM8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasketballTeamHelper/BasketballTeamHelper-Prefix.pch";
 				INFOPLIST_FILE = "BasketballTeamHelper/BasketballTeamHelper-Info.plist";

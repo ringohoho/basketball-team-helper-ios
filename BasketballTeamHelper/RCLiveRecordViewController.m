@@ -8,6 +8,7 @@
 
 #import "RCLiveRecordViewController.h"
 #import "RCAddMatchViewController.h"
+#import "BFPaperButton.h"
 
 @interface RCLiveRecordViewController ()
 
@@ -36,6 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.addRecordBtn.backgroundColor = [UIColor whiteColor];
     self.statsArray = [NSMutableArray arrayWithContentsOfFile:[self dataFilePath]];
     
     RCTeam *team = [[RCTeam alloc] init];
@@ -82,13 +84,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *StatsCellID = @"Stats Cell";
+    static NSString *StatsCellID = @"Record Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:StatsCellID];
     int row = (int)indexPath.row;
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@%@",
-                           self.statsArray[row][kTimeKey],
-                           self.statsArray[row][kNameKey], self.statsArray[row][kActionKey]];
+    
+    UILabel *titleLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *subtitleLabel = (UILabel *)[cell viewWithTag:2];
+    
+    subtitleLabel.text = [NSString stringWithFormat:@"%@", self.statsArray[row][kTimeKey]];
+    titleLabel.text = [NSString stringWithFormat:@"%@ %@", self.statsArray[row][kNameKey], self.statsArray[row][kActionKey]];
     
     return cell;
 }

@@ -7,11 +7,14 @@
 //
 
 #import "RCAppDelegate.h"
+#import "RCHelper.h"
 
 @implementation RCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setTintColor:DEFAULT_TINT_COLOR];
+    [[UIToolbar appearance] setTintColor:DEFAULT_TINT_COLOR];
     return YES;
 }
 
