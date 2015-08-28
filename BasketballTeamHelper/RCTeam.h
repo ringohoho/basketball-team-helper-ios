@@ -36,6 +36,8 @@ NSString *kFaultKey;
 
 @property (nonatomic, copy) NSDictionary *info;
 
++ (NSDictionary *)matchAsStatsWithMatch:(NSDictionary *)match;
+
 - (NSString *)name;
 - (void)setName:(NSString *)name;
 - (NSString *)comment;
@@ -47,6 +49,7 @@ NSString *kFaultKey;
 - (void)addMatch:(NSString *)title atDate:(NSDate *)date withStats:(NSArray *)stats andComment:(NSString *)comment;
 - (NSDictionary *)stats;
 - (NSArray *)matches;
+- (NSDictionary *)mactchAsStatsAtIndex:(NSInteger)index;
 - (void)setMatch:(NSDictionary *)match atIndex:(NSInteger)index;
 
 @end

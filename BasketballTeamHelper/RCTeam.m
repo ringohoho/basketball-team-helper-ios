@@ -39,6 +39,120 @@ NSString *kFaultKey = @"fault";
 
 @implementation RCTeam
 
++ (NSDictionary *)matchAsStatsWithMatch:(NSDictionary *)match
+{
+    NSArray *matchRecords = match[kStatsKey];
+    
+    NSMutableDictionary *matchAsStats = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                         [NSNumber numberWithInt:0], kScoreKey,
+                                         [NSNumber numberWithInt:0], k1PointShootKey,
+                                         [NSNumber numberWithInt:0], k1PointGoalKey,
+                                         [NSNumber numberWithInt:0], k2PointShootKey,
+                                         [NSNumber numberWithInt:0], k2PointGoalKey,
+                                         [NSNumber numberWithInt:0], k3PointShootKey,
+                                         [NSNumber numberWithInt:0], k3PointGoalKey,
+                                         [NSNumber numberWithInt:0], kReboundKey,
+                                         [NSNumber numberWithInt:0], kAssistKey,
+                                         [NSNumber numberWithInt:0], kStealKey,
+                                         [NSNumber numberWithInt:0], kBlockKey,
+                                         [NSNumber numberWithInt:0], kFoulKey,
+                                         [NSNumber numberWithInt:0], kFaultKey, nil];
+    
+    for (NSDictionary *aRecord in matchRecords)
+    {
+        NSString *action = aRecord[kActionKey];
+        if ([action isEqualToString:@"二分未中"])
+        {
+            int n = [matchAsStats[k2PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k2PointShootKey];
+        }
+        else if ([action isEqualToString:@"二分命中"])
+        {
+            int n = [matchAsStats[k2PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k2PointShootKey];
+            n = [matchAsStats[k2PointGoalKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k2PointGoalKey];
+        }
+        else if ([action isEqualToString:@"三分未中"])
+        {
+            int n = [matchAsStats[k3PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k3PointShootKey];
+        }
+        else if ([action isEqualToString:@"三分命中"])
+        {
+            int n = [matchAsStats[k3PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k3PointShootKey];
+            n = [matchAsStats[k3PointGoalKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k3PointGoalKey];
+        }
+        else if ([action isEqualToString:@"罚球未中"])
+        {
+            int n = [matchAsStats[k1PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k1PointShootKey];
+        }
+        else if ([action isEqualToString:@"罚球命中"])
+        {
+            int n = [matchAsStats[k1PointShootKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k1PointShootKey];
+            n = [matchAsStats[k1PointGoalKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:k1PointGoalKey];
+        }
+        else if ([action isEqualToString:@"篮板"])
+        {
+            int n = [matchAsStats[kReboundKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kReboundKey];
+        }
+        else if ([action isEqualToString:@"助攻"])
+        {
+            int n = [matchAsStats[kAssistKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kAssistKey];
+        }
+        else if ([action isEqualToString:@"抢断"])
+        {
+            int n = [matchAsStats[kStealKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kStealKey];
+        }
+        else if ([action isEqualToString:@"盖帽"])
+        {
+            int n = [matchAsStats[kBlockKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kBlockKey];
+        }
+        else if ([action isEqualToString:@"犯规"])
+        {
+            int n = [matchAsStats[kFoulKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kFoulKey];
+        }
+        else if ([action isEqualToString:@"失误"])
+        {
+            int n = [matchAsStats[kFaultKey] intValue];
+            n ++;
+            [matchAsStats setValue:[NSNumber numberWithInt:n] forKey:kFaultKey];
+        }
+    }
+    
+    int p1Goal = [matchAsStats[k1PointGoalKey] intValue];
+    int p2Goal = [matchAsStats[k2PointGoalKey] intValue];
+    int p3Goal = [matchAsStats[k3PointGoalKey] intValue];
+    int score = p1Goal + 2 * p2Goal + 3 * p3Goal;
+    [matchAsStats setValue:[NSNumber numberWithInt:score] forKey:kScoreKey];
+    
+    return matchAsStats;
+}
+
 - (instancetype)init
 {
     self = [super init];
@@ -350,6 +464,12 @@ NSString *kFaultKey = @"fault";
 - (NSArray *)matches
 {
     return self.info[kMatchesKey];
+}
+
+- (NSDictionary *)mactchAsStatsAtIndex:(NSInteger)index
+{
+    NSDictionary *match = [self matches][index];
+    return [RCTeam matchAsStatsWithMatch:match];
 }
 
 - (void)setMatch:(NSDictionary *)match atIndex:(NSInteger)index
